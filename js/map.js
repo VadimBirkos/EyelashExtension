@@ -1,5 +1,9 @@
 var map;
-var coords = { lat: 53.874360, lng: 27.652274 };
+var coords = {
+    lat: 53.874360,
+    lng: 27.652274
+};
+
 function addMarker() {
 
     var marker = new google.maps.Marker({
@@ -11,16 +15,15 @@ function addMarker() {
 }
 
 function initMap() {
-    debugger;
     map = new google.maps.Map(document.getElementById('map'), {
         center: coords,
-        zoom: 16,
+        zoom: 15,
         zoomControl: true,
         scaleControl: true,
-        scrollwheel: true,
+        scrollwheel: false,
         disableDoubleClickZoom: true,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
-        backgroundColor: "#ffffff",
+        backgroundColor: "#f5f5f5",
         disableDefaultUI: true
     });
     addMarker();
