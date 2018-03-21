@@ -708,6 +708,7 @@ i {
   color: #aece61;
 }
 
+
 /* Footer section */
 .footer {
   position: relative;
@@ -715,6 +716,14 @@ i {
   color: #7d7975;
   padding: 95px 0 50px;
   font-size:16px;
+}
+
+footer div.info span.datail{
+  float:left;
+}
+
+ul.social-buttons li a i{
+  padding-right: 0;
 }
 .footer p {
   line-height:26px;
