@@ -720,6 +720,7 @@ i {
 
 footer div.info span.datail{
   float:left;
+  margin-bottom: 10px;
 }
 
 ul.social-buttons li a i{

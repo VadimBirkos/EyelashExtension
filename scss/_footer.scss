@@ -8,6 +8,11 @@ footer {
     text-transform: none;
     @include heading-font;
   }
+div.footer-header{
+  height: 60px;
+  vertical-align: -webkit-baseline-middle;
+}
+
   ul.quicklinks {
     font-size: 90%;
     line-height: 40px;
