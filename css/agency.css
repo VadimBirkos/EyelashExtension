@@ -69,8 +69,9 @@ section h3.section-subheading {
 }
 
 .btn-primary {
-  background-color: #fed136;
+  background-color: transparent;
   border-color: #fed136;
+  color: #fed136;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
@@ -110,15 +111,19 @@ img::-moz-selection {
   right: 0;
   padding: 13px;
   text-transform: uppercase;
-  color: white;
-  border: 0;
-  background-color: #fed136;
+  color: #fed136;
+  border: 0.5px #fed136 solid;
+  background-color: transparent;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-brand {
   color: #fed136;
-  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: -1.4px;
+
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -169,7 +174,7 @@ img::-moz-selection {
 }
 
 header.masthead {
-  text-align: center;
+  text-align: left;
   color: white;
   background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
@@ -181,51 +186,125 @@ header.masthead {
   background-size: cover;
 }
 
-header.masthead .intro-text {
-  padding-top: 150px;
-  padding-bottom: 100px;
-}
-
-header.masthead .intro-text .intro-lead-in {
-  font-size: 22px;
-  font-style: italic;
-  line-height: 22px;
-  margin-bottom: 25px;
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-header.masthead .intro-text .intro-heading {
-  font-size: 50px;
+.intro-text .intro-heading {
+  font-size: 30px;
+  line-height: 25px;
   font-weight: 700;
-  line-height: 50px;
-  margin-bottom: 25px;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 34px;
+  letter-spacing: -1.4px;
+  font-family: 'Roboto Condensed', sans-serif
+}
+
+.footer-logo{
+  color: #fed136;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: -1.4px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+@media (max-width: 768px){
+.intro-heading.heading-header {
+    font-size: 40px !important;
+}
+
+a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger{
+  display: none;
+}
+
+
+header.masthead .intro-text {
+  text-align: center;
+  padding-top: 384px;
+  padding-bottom: 86px;
+}
 }
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px;
+    padding-top: 270px;
+    padding-bottom: 102px;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: 40px;
     font-style: italic;
     line-height: 40px;
     margin-bottom: 25px;
-    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
   }
   header.masthead .intro-text .intro-heading {
-    font-size: 75px;
+    font-size: 35px;
     font-weight: 700;
+    margin-bottom: 15px;
+    text-align: left;
     line-height: 75px;
-    margin-bottom: 50px;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: -1.4px;
+
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .intro-heading.heading-caption {
+    margin-bottom: 187px !important;
+  }
+
+  .intro-heading.heading-header{
+    font-size: 40px !important;
   }
 }
 
 .service-heading {
   margin: 15px 0;
   text-transform: none;
+  width: 100%;
+  text-align: center;
+}
+
+.service-header{
+  position: relative;
+  display: inline-block;
+  width: 7em;
+  height: 128px;
+  line-height: 2em;
+}
+
+.service-header-text-block{
+  height: 90px;
+  display: table-cell;
+  text-align: center;
+  -webkit-box-align: center;
+  width: 527px;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.service-section-subheading{
+  margin-bottom: 45px;
+}
+
+.classic-eyes{
+  background-image: url(../img/classic.jpg);
+}
+
+.two-type-eyes{
+  background-image: url(../img/2d.jpg);
+}
+
+.three-type-eyes{
+  background-image: url(../img/3d.jpg);
+}
+
+.eyes-example{
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: 123px;
+  background-position: center center;
+  border-radius: 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #portfolio .portfolio-item {
@@ -594,6 +673,7 @@ header.masthead .intro-text .intro-heading {
 
 section#contact .section-heading {
   color: #404040;
+
 }
 
 section#contact .form-group {
