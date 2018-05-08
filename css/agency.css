@@ -401,7 +401,8 @@ header.masthead .intro-text {
 
 .portfolio-modal .modal-content h2 {
   font-size: 2em;
-  margin-bottom: 15px;
+  margin-bottom: 0;
+  font-weight: 500;
 }
 
 .portfolio-modal .modal-content p {
@@ -410,8 +411,7 @@ header.masthead .intro-text {
 
 .portfolio-modal .modal-content p.item-intro {
   font-size: 20px;
-  font-style: italic;
-  margin: 20px 0 30px;
+  margin: 0px 0 30px 0;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
