@@ -385,6 +385,10 @@ header.masthead .intro-text {
   }
 }
 
+.modal-body{
+  font-family: Helvetica, sans-serif;
+}
+
 .portfolio-modal {
   padding-right: 0px !important;
 }
