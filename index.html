@@ -133,7 +133,7 @@
                 <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/3d-thumb.png" alt="">
+            <img class="img-fluid lazy" data-src="img/portfolio/3d-thumb.png" alt="">
           </a>
           <div class="portfolio-caption">
             <h4>Александа</h4>
@@ -147,7 +147,7 @@
                 <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/classic_thumb_julia.jpg" alt="">
+            <img class="img-fluid lazy" data-src="img/portfolio/classic_thumb_julia.jpg" alt="">
           </a>
           <div class="portfolio-caption">
             <h4>Юлия</h4>
@@ -161,7 +161,7 @@
                 <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/classic_thumb_olga.jpg" alt="">
+            <img class="img-fluid lazy" data-src="img/portfolio/classic_thumb_olga.jpg" alt="">
           </a>
           <div class="portfolio-caption">
             <h4>Ольга</h4>
@@ -185,7 +185,7 @@
           <ul class="timeline">
             <li>
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
+                <img class="rounded-circle img-fluid lazy" data-src="img/about/1.jpg" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -200,7 +200,7 @@
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+                <img class="rounded-circle img-fluid lazy" data-src="img/about/2.jpg" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -215,7 +215,7 @@
             </li>
             <li>
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+                <img class="rounded-circle img-fluid lazy" data-src="img/about/3.jpg" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -229,7 +229,7 @@
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
+                <img class="rounded-circle img-fluid lazy" data-src="img/about/4.jpg" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -398,7 +398,7 @@
                 <!-- Project Details Go Here -->
                 <h2>Александа</h2>
                 <p class="item-intro text-muted">3D наращивание ресниц.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/3dfull.png" alt="">
+                <img class="img-fluid d-block mx-auto lazy" data-src="img/portfolio/3dfull.png" alt="">
                 <p>Здесь будет какая-то история. Здесь будет какая-то история. Здесь будет какая-то история. Здесь будет какая-то
                   история. Здесь будет какая-то история.Здесь будет какая-то история. Здесь будет какая-то история.Здесь
                   будет какая-то история.Здесь будет какая-то история.
@@ -435,7 +435,7 @@
                 <!-- Project Details Go Here -->
                 <h2>Юлия</h2>
                 <p class="item-intro text-muted">Классическое наращивание</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/classic_full_julia.jpg" alt="">
+                <img class="img-fluid d-block mx-auto lazy" data-src="img/portfolio/classic_full_julia.jpg" alt="">
                 <p>Здесь будет какая-то история. Здесь будет какая-то история. Здесь будет какая-то история. Здесь будет какая-то
                   история. Здесь будет какая-то история.Здесь будет какая-то история. Здесь будет какая-то история.Здесь
                   будет какая-то история.Здесь будет какая-то история.
@@ -472,7 +472,7 @@
                 <!-- Project Details Go Here -->
                 <h2>Ольга</h2>
                 <p class="item-intro text-muted">Классическое наращивание</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/classic_full_olga.jpg" alt="">
+                <img class="img-fluid d-block mx-auto lazy" data-src="img/portfolio/classic_full_olga.jpg" alt="">
                 <p>Здесь будет какая-то история. Здесь будет какая-то история. Здесь будет какая-то история. Здесь будет какая-то
                   история. Здесь будет какая-то история.Здесь будет какая-то история. Здесь будет какая-то история.Здесь
                   будет какая-то история.Здесь будет какая-то история.
@@ -498,7 +498,8 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src ="vendor/jquery/jquery.lazy.min.js"></script>
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Contact form JavaScript -->
   <script src="js/jqBootstrapValidation.js"></script>
@@ -506,10 +507,11 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
+  <script src="js/main.js"></script>
 
   <!-- Google map -->
-  <script async src="js/map.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuf0k_j5tuygvX_ADLi_9H-2ZWb_ExWvY&callback=initMap&language=ru"></script>
+  <script src="js/map.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuf0k_j5tuygvX_ADLi_9H-2ZWb_ExWvY&callback=initMap&language=ru"></script>
 </body>
 
 </html>
